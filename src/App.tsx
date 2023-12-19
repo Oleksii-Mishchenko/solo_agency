@@ -1,9 +1,9 @@
 import './App.scss';
 
-export const App = () => {
+export function App() {
   return (
     <div className="App">
-      <h1 className='App__title'>Hello world!</h1>
+      <h1 className="App__title">Hello world!</h1>
     </div>
-  )
-};
+  );
+}
