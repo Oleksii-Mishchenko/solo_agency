@@ -16,8 +16,15 @@ module.exports = {
     '@typescript-eslint',
   ],
   rules: {
-    'prettier/prettier': ['error', { semi: true }],
-    'prettier/prettier': ['error', { 'singleQuote': true }],
+    'prettier/prettier': [
+      'error',
+      {
+        semi: true,
+        singleQuote: true,
+        arrowParens: 'avoid',
+      },
+    ],
+    'arrow-parens': ['error', 'as-needed', { requireForBlockBody: false }],
     'max-len': ['error', { 'code': 80, 'ignoreComments': true, 'ignoreTemplateLiterals': true }],
     '@typescript-eslint/indent': ['error', 2],
     '@typescript-eslint/semi': ['error'],
